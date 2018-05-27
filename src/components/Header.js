@@ -6,11 +6,11 @@ import '../styles/styles.scss';
 
 const Header = () =>(
 	<div>
-	 <h1>Expensify</h1>
+	 <h1>Bruno Miyamotto</h1>
 		 <div>
-		  <NavLink to="/" activeClassName="is-active" exact={true}> || Dash Board</NavLink> 
-			<NavLink to="/create" activeClassName="is-active"> || Create Expense</NavLink>
-			<NavLink to="/help" activeClassName="is-active"> || Help</NavLink>
+		  <NavLink to="/" activeClassName="is-active" exact={true}> || @brunomiyamotto</NavLink> 
+			<NavLink to="/portafolio" activeClassName="is-active"> || Portafolio</NavLink>
+			<NavLink to="/contact" activeClassName="is-active"> || contact</NavLink>
 	 	</div>
 	 </div>
 ); 

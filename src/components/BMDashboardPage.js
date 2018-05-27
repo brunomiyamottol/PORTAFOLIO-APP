@@ -4,12 +4,12 @@ const ReactDOM = require('react-dom'); //import ReactDOM from 'react-dom';
 import {BrowserRouter, Route, Switch, Link, NavLink} from 'react-router-dom';
 import '../styles/styles.scss'; 
 
-const ExpenseDashboardPage = () =>(
+const BMDashboardPage = () =>(
 	<div>
 	<h3>
-	This is from my Dashboard Component !!!!
+	DASHBOARD Component !!!!
 	</h3>
 	</div>
 ); 
 
-export default ExpenseDashboardPage; 
+export default BMDashboardPage; 

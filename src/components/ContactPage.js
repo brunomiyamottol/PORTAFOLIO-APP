@@ -4,10 +4,11 @@ const ReactDOM = require('react-dom'); //import ReactDOM from 'react-dom';
 import {BrowserRouter, Route, Switch, Link, NavLink} from 'react-router-dom';
 import '../styles/styles.scss'; 
 
-const AddExpensePage = () =>(
+
+const ContactPage = () =>(
 	<div>
-	This is from my Add Expense Component 
+	This is from my Help Page Component 
 	</div>
 ); 
 
-export default AddExpensePage; 
+export default ContactPage; 

@@ -4,11 +4,10 @@ const ReactDOM = require('react-dom'); //import ReactDOM from 'react-dom';
 import {BrowserRouter, Route, Switch, Link, NavLink} from 'react-router-dom';
 import '../styles/styles.scss'; 
 
-
-const HelpPage = () =>(
+const Portafolio = () =>(
 	<div>
-	This is from my Help Page Component 
+	This is from my Add Expense Component 
 	</div>
 ); 
 
-export default HelpPage; 
+export default Portafolio; 
