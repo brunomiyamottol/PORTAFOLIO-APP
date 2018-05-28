@@ -12,7 +12,8 @@
     "start-c": "babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch | live-server public/",
     "build:dev-watch": "webpack",
     "build:dev": "webpack --watch | node server/server.js ",
-    "build:prod": "webpack -p --env production"
+    "build:prod": "webpack -p --env production",
+    "heroku-postbuild":"npm run build:prod"
   },
   "author": "@brunomiyamotto",
   "license": "ISC",
