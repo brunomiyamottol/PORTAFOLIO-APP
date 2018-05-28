@@ -1,0 +1,33 @@
+.header{
+background:$off-balck; 
+color:white; 
+margin-bottom: 0; 
+padding:$m-size 
+}
+
+//BEM Block element modifier; 
+
+.header__title{
+	font-size:$xl-size; 
+	font-family: 'Courier New', Courier, monospace; 
+	font-weight: 500; 
+	margin:0; 
+}
+
+.header__subtitle{
+	color:$off-white; 
+	font-size: $m-size;
+	font-weight: 500; 
+	margin:0; 	
+}
+
+.header__nav {
+	color:white; 
+}
+
+@media (min-width:$desktop-breakpoint) {
+	.header {
+		margin-bottom:0; 
+	}
+
+}

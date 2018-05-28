@@ -1,0 +1,35 @@
+.beliefs{
+	background: url('/images/bg.jpg'); 
+	color:white;
+	text-align: center;  
+	background-size: cover; 
+	height: 100vh; 
+	width: 100 vw; 
+	}
+	
+	//BEM Block element modifier; 
+	
+	.beliefs__title{
+		font-size:$xl-size; 
+		font-family: 'Courier New', Courier, monospace; 
+		font-weight: 500; 
+		margin:0; 
+	}
+	
+	.beliefs__subtitle{
+		color:$off-white; 
+		font-size: $m-size;
+		font-weight: 500; 
+		margin:0; 	
+	}
+	
+	.beliefs__nav {
+		color:white; 
+	}
+	
+	@media (min-width:$desktop-breakpoint) {
+		.beliefs {
+			margin-bottom:0; 
+		}
+	
+	}

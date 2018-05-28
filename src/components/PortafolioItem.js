@@ -5,10 +5,11 @@ import {BrowserRouter, Route, Switch, Link, NavLink} from 'react-router-dom';
 import '../styles/styles.scss'; 
 
 
-const ContactPage = () =>(
-	<div>
-	This is from my Help Page Component 
+const PortafolioItem = (props) =>(
+	<div className="portafolio">
+	<h2 className="portafolio__item__title">Things I've done</h2>
+	<p>Under Construction {props.match.params.id}</p>
 	</div>
 ); 
 
-export default ContactPage; 
+export default PortafolioItem; 
