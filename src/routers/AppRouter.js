@@ -15,13 +15,13 @@ import '../styles/styles.scss';
 const AppRouter = () =>(
 	<BrowserRouter>
 		<div>
-		<Header />
+	  <Header /> 
+			<Route path="/" component={Home} exact={true}/>
 			<Switch>
-				<Route path="/" component={Home} exact={true}/>
-				<Route path="/whoami" component={WhoAmI} />
-				<Route path="/beliefs" component={Beliefs} />
-				<Route path="/portafolio/:id" component={PortafolioItem} />
-				<Route path="/portafolio/" component={Portafolio} exact={true}/>
+				<Route path="/whoami" component={WhoAmI} isAuthenticated={true}/>
+				<Route path="/beliefs" component={Beliefs} isAuthenticated={false}/>
+				<Route path="/portafolio/:id" component={PortafolioItem} isAuthenticated={true}/>
+				<Route path="/portafolio/" component={Portafolio} exact={true} isAuthenticated={true}/>
 				<Route component={NotFoundPage} />
 			</Switch>
 		</div>
