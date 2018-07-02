@@ -1,11 +1,11 @@
 'use strict'; 
-const React = require('react'); //import React from 'react'; 
-const ReactDOM = require('react-dom'); //import ReactDOM from 'react-dom';
-import {BrowserRouter, Route, Switch, Link, NavLink} from 'react-router-dom';
+import React from 'react'; 
+import Header from '../components/Header'; 
 import '../styles/styles.scss'; 
 
 const Home = () =>(
 	<div className="box-layout">
+	<Header /> 
 	<h2 className="header__title">Hey, I'm Bruno Miyamotto</h2>
 	<p> </p>
 	</div>

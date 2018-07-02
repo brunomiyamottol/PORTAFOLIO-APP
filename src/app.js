@@ -1,41 +1,38 @@
 'use strict'; 
-const React = require('react'); //import React from 'react'; 
-const ReactDOM = require('react-dom'); //import ReactDOM from 'react-dom'; 
-import {BrowserRouter, Route, Switch, Link, NavLink} from 'react-router-dom';
+import React from 'react'; 
+import ReactDOM from 'react-dom'; 
 import AppRouter from './routers/AppRouter';
-import Home from './components/Home'; 
 import 'normalize.css/normalize.css';  
 import './styles/styles.scss'; 
 
-const App = (props) => (
+const App = () => (
 	<div>
 	<AppRouter />
 	</div>
 ); 
 
+// const requiereAuthentication = (WrappedComponent) => {
+// 	return	(props) => (
+// 	<div>
+// 	{props.isAuthenticated ? (
+// 		<WrappedComponent {...props} />
+// 		) : (
+// 		<p>Please login to see the information</p>
+// 	)}
+// 	</div>
+// 	); 
+// }
 
-const requiereAuthentication = (WrappedComponent) => {
-	return	(props) => (
-	<div>
-	{props.isAuthenticated ? (
-		<WrappedComponent {...props} />
-		) : (
-		<p>Please login to see the information</p>
-	)}
-	</div>
-	); 
-}
+// const withAdminWarning = (WrappedComponent) =>{
+// 	return (props) =>(
+// 	<div>
+// 	{props.isAdmin && <p>This is Privet Information Please Use Wisely</p>}
+// 	<WrappedComponent {...props}/>
+// 	</div>	
+// )}; 
 
-const withAdminWarning = (WrappedComponent) =>{
-	return (props) =>(
-	<div>
-	{props.isAdmin && <p>This is Privet Information Please Use Wisely</p>}
-	<WrappedComponent {...props}/>
-	</div>	
-)}; 
-
-const AuthInfo = requiereAuthentication(AppRouter);
-const PrivetInfo = withAdminWarning(AppRouter); 
+// const AuthInfo = requiereAuthentication(AppRouter);
+// const PrivetInfo = withAdminWarning(AppRouter); 
 
 ReactDOM.render(<App isAdmin={true} isAuthenticated={true}/>, document.getElementById('app'));
 
