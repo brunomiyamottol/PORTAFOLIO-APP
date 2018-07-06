@@ -13,7 +13,7 @@
     "build:dev-watch": "webpack",
     "build:dev": "webpack --watch | node server/server.js ",
     "build:prod": "webpack -p --env production",
-    "heroku-postbuild":"npm run build:prod"
+    "heroku-postbuild": "npm run build:prod"
   },
   "author": "@brunomiyamotto",
   "license": "ISC",
@@ -29,6 +29,7 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "body-parser": "^1.18.2",
+    "bootstrap": "^4.1.1",
     "css-loader": "^0.28.11",
     "express": "^4.16.2",
     "live-server": "^1.2.0",
@@ -42,6 +43,7 @@
     "react-modal": "^3.4.4",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
+    "reactstrap": "^6.2.0",
     "sass-loader": "^7.0.1",
     "style-loader": "^0.21.0",
     "validator": "^10.2.0",

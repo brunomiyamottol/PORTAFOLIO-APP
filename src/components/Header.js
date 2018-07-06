@@ -6,14 +6,49 @@ import '../styles/styles.scss';
 
 const Header = () =>(
 	<div className="header">
-	 <h1>Bruno Miyamotto</h1>
+		<nav className="navbar navbar-expand-md navbar-dark bg-dark">
+			<a className="navbar-brand" href="/">MIYAMOTTO</a>
+				<button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+					<span className="navbar-toggler-icon">_</span>
+				</button>
+				<div className="collapse navbar-collapse" id="navbarsExample04">
+					<ul className="navbar-nav mr-auto">
+						<li className="nav-item active">
+							<a className="nav-link" href="/">Home<span className="sr-only"></span></a>
+						</li>
+						<li className="nav-item active">
+						<a className="nav-link" href="/whoAmI">Get into my brain<span className="sr-only"></span></a>
+						</li>
+						<li className="nav-item active">
+						<a className="nav-link" href="/portafolio">Here's what I've done<span className="sr-only"></span></a>
+						</li>
+						<li className="nav-item active">
+						<a className="nav-link" href="/beliefs">Beliefs<span className="sr-only"></span></a>
+						</li>
+					</ul>
+				</div>
+	</nav>
+	</div>
+); 
+
+export default Header; 
+
+
+
+
+{
+/*
+const Header = () =>(
+	<div classNameNameName="header">
 		 <div>
-		  <NavLink className="header__nav" to="/" activeClassName="is-active" exact={true}> |+| Hey, I'm Bruno Miyamotto</NavLink> 
-			<NavLink className="header__nav" to="/whoAmI" activeClassName="is-active"> |-| Get into my brain</NavLink>
-      <NavLink className="header__nav" to="/portafolio" activeClassName="is-active"> |+| Here's what I've done</NavLink>
-			<NavLink className="header__nav" to="/beliefs" activeClassName="is-active"> |-| Beliefs</NavLink>
+		  <NavLink classNameNameName="header__nav" to="/" activeclassNameNameName="is-active" exact={true}> |+| Hey, I'm Bruno Miyamotto</NavLink> 
+			<NavLink classNameNameName="header__nav" to="/whoAmI" activeclassNameNameName="is-active"> |-| Get into my brain</NavLink>
+      <NavLink classNameNameName="header__nav" to="/portafolio" activeclassNameNameName="is-active"> |+| Here's what I've done</NavLink>
+			<NavLink classNameNameName="header__nav" to="/beliefs" activeclassNameNameName="is-active"> |-| Beliefs</NavLink>
 	 	</div>
 	 </div>
 ); 
 
 export default Header; 
+*/
+}

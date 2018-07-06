@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux'; 
 import { startLogin } from '../actions/auth'; 
+import '../styles/styles.scss'; 
 
 export const NavHeader = ({  startLogin  }) => (
   <header>
