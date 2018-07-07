@@ -2,8 +2,12 @@
 background:$off-balck; 
 color:white; 
 margin-bottom: 0; 
-padding:$m-size; 
-font-size: $m-size;  
+padding:$m-size;
+font-size: $m-size;
+a{
+	color:#aaa; 
+	font-weight: 200; 
+}  
 }
 
 //BEM Block element modifier; 
