@@ -1,29 +1,36 @@
 'use strict'; 
-import React from 'react'; 
-import {BrowserRouter, Route, Switch, Link, NavLink} from 'react-router-dom';
-import Header from '../components/Header'; 
+import React, { Component } from 'react'; 
+import {BrowserRouter as Router, Route, Switch, Link, NavLink} from 'react-router-dom';
+import NavBar from '../components/NavBar'; 
 import Home from '../components/Home'; 
-import WhoAmI from '../components/WhoAmI'; 
-import Beliefs from '../components/Beliefs';
-import PortafolioItem from '../components/PortafolioItem';
+import About from '../components/About'; 
 import Portafolio from '../components/Portafolio';
-import Dashboard from '../components/Dashboard'; 
+import PortafolioItem from '../components/PortafolioItem';
+import Resume from '../components/Resume'; 
+import Blog from '../components/Blog'; 
+import Press from '../components/Press'; 
+import Contact from '../components/Contact'; 
 import NotFoundPage from '../components/NotFoundPage'; 
 import '../styles/styles.scss'; 
 
-const AppRouter = () =>(
-	<BrowserRouter>
-		<div>
-			<Header />
-				<Route path="/" component={Home} exact={true}/>
-				<Route path="/whoami" component={WhoAmI} isAuthenticated={true}/>
-				<Route path="/beliefs" component={Beliefs} isAuthenticated={false}/>
-				<Route path="/portafolio/:id" component={PortafolioItem} isAuthenticated={true}/>
-				<Route path="/portafolio/" component={Portafolio} exact={true} isAuthenticated={true}/>
-				<Route path="/dashboard" component={Dashboard} />
-				<Route path="/PageNotFound" component={NotFoundPage} />
-		</div>
-	</BrowserRouter>
-); 
 
-export default AppRouter; 
+	export default class AppRouter extends Component {
+	render() {
+		return (
+		<Router>
+			<div>
+				<NavBar />
+					<Route path="/" component={Home} exact={true}/>
+					<Route path="/resume" component={Resume}/>
+					<Route path="/about" component={About} isAuthenticated={true}/>
+					<Route path="/portafolio" component={Portafolio} exact={true} isAuthenticated={true}/>
+					<Route path="/portafolio/:id" component={PortafolioItem} isAuthenticated={true}/>
+					<Route path="/blog" component={Blog} />
+					<Route path="/press" component={Press} />
+					<Route path="/contact" component={Contact} />
+					<Route path="/PageNotFound" component={NotFoundPage} />
+			</div>
+		</Router>
+); 
+}
+}
