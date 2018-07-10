@@ -1,7 +1,7 @@
 'use strict'; 
 import React, { Component } from 'react'; 
 import {BrowserRouter as Router, Route, Switch, Link, NavLink} from 'react-router-dom';
-import NavBar from '../components/NavBar'; 
+import FixedNavTransBarWFull from '../components/FixedNavTransBarWFull'; 
 import Home from '../components/Home'; 
 import About from '../components/About'; 
 import Portafolio from '../components/Portafolio';
@@ -19,7 +19,7 @@ import '../styles/styles.scss';
 		return (
 		<Router>
 			<div>
-				<NavBar />
+				<FixedNavTransBarWFull />
 					<Route path="/" component={Home} exact={true}/>
 					<Route path="/resume" component={Resume}/>
 					<Route path="/about" component={About} isAuthenticated={true}/>
