@@ -70,17 +70,17 @@ export default class CarouselPage extends Component {
             </CarouselItem>
             <CarouselItem itemId="3">
               <View>
-                <img className="d-block w-100" src="/images/animal-aquatic-close-up-837500.jpg" alt="Third slide" />
+                <img className="d-block w-100" src="/images/action-adrenaline-adventure.jpg" alt="Third slide" />
                 <Mask overlay="black-slight"></Mask>
               </View>
               <CarouselCaption>
-                <h3 className="h3-responsive">Be Crafty, Lovable, Systematic, and Relentless</h3>
+                <h3 className="h3-responsive">Be Inquisitive, Empathetic, Systematic and Relentless</h3>
                 <p></p>
               </CarouselCaption>
             </CarouselItem>
             <CarouselItem itemId="4">
               <View>
-                <img className="d-block w-100" src="/images/astronomy-cosmos.jpg" alt="Mattonit's item" />
+                <img className="d-block w-100" src="/images/astronomy-cosmos-dark.jpg" alt="Mattonit's item" />
                 <Mask overlay="black-light"></Mask>
               </View>
               <CarouselCaption>
@@ -90,7 +90,7 @@ export default class CarouselPage extends Component {
 						</CarouselItem>
 						<CarouselItem itemId="5">
 						<View>
-							<img className="d-block w-100" src="/images/legs-outdoors.jpg" alt="Mattonit's item" />
+							<img className="d-block w-100" src="/images/legs-outdoors-person.jpg" alt="Mattonit's item" />
 							<Mask overlay="black-light"></Mask>
 						</View>
 						<CarouselCaption>

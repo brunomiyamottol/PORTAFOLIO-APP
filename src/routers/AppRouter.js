@@ -7,7 +7,7 @@ import About from '../components/About';
 import Portafolio from '../components/Portafolio';
 import PortafolioItem from '../components/PortafolioItem';
 import Resume from '../components/Resume'; 
-import Blog from '../components/Blog'; 
+import Technology from '../components/Technology'; 
 import Press from '../components/Press'; 
 import Contact from '../components/Contact'; 
 import NotFoundPage from '../components/NotFoundPage'; 
@@ -21,14 +21,14 @@ import '../styles/styles.scss';
 			<div>
 				<FixedNavTransBarWFull />
 					<Route path="/" component={Home} exact={true}/>
-					<Route path="/resume" component={Resume}/>
+					{/*<Route path="/resume" component={Resume}/>
 					<Route path="/about" component={About} isAuthenticated={true}/>
-					<Route path="/portafolio" component={Portafolio} exact={true} isAuthenticated={true}/>
+					<Route path="/experience" component={Portafolio} exact={true} isAuthenticated={true}/>
 					<Route path="/portafolio/:id" component={PortafolioItem} isAuthenticated={true}/>
-					<Route path="/blog" component={Blog} />
+					<Route path="/technology" component={Technology} />
 					<Route path="/press" component={Press} />
 					<Route path="/contact" component={Contact} />
-					<Route path="/PageNotFound" component={NotFoundPage} />
+		<Route path="/PageNotFound" component={NotFoundPage} />*/}
 			</div>
 		</Router>
 ); 

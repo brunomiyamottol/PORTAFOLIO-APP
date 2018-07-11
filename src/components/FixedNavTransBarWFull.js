@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Navbar, NavbarBrand, NavbarNav, NavbarToggler, NavLink, Collapse, NavItem, Fa, Container, Mask, View } from 'mdbreact';
+import { Navbar, NavbarBrand, NavbarNav, NavbarToggler, NavLink, Collapse, NavItem,Button,  Fa, Container, Mask, View } from 'mdbreact';
 import '../styles/styles.scss'; 
 
 export default class FixedNavTransBarWFull extends Component  {
@@ -31,19 +31,33 @@ render() {
                     <NavItem active>
                         <NavLink to="/">HOME</NavLink>
                     </NavItem>
-                    <NavItem>
-												<NavLink className="nav-link" to="/resume">RESUME</NavLink>
+										<NavItem >
+                        <NavLink to="#">EXPERIENCE</NavLink>
+										</NavItem>
+                    <NavItem >
+                    <NavLink to="#">BE-TECHNOLOGY</NavLink>
+                    </NavItem>
+                    <NavItem >
+                    <NavLink to="#">FE-TECHNOLOGY</NavLink>
+                    </NavItem>
+                    <NavItem >
+                    <NavLink to="#">DATA-SCIENCE</NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink to="/about">ABOUT</NavLink>
-										</NavItem>
-										<NavItem active>
-                        <NavLink to="/portafolio">PORTAFOLIO</NavLink>
-										</NavItem>
-										<NavItem active>
-                        <NavLink to="/contact">CONTACT</NavLink>
+                    <NavLink to="#">MOBILITY</NavLink>
                     </NavItem>
                   </NavbarNav>
+                  <NavbarNav right>
+                  <NavItem>
+                    <NavLink to="/"><Fa icon="facebook"/></NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink to="/"><Fa icon="twitter"/></NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink to="/"><Fa icon="instagram"/></NavLink>
+                  </NavItem>
+                </NavbarNav>
                 </Collapse>
               </Navbar>
             <View style={view}>
