@@ -31,8 +31,8 @@ render() {
                     <NavItem active>
                         <NavLink to="/">HOME</NavLink>
                     </NavItem>
-										<NavItem >
-                        <NavLink to="#">EXPERIENCE</NavLink>
+										<NavItem active>
+                        <NavLink to="/portafolio">EXPERIENCE</NavLink>
 										</NavItem>
                     <NavItem >
                     <NavLink to="#">BE-TECHNOLOGY</NavLink>
