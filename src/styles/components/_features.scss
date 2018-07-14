@@ -1,4 +1,4 @@
-.beliefs{
+.features{
 	background: url('/images/bg.jpg'); 
 	color:white;
 	text-align: center;  
@@ -9,7 +9,7 @@
 	
 	//BEM Block element modifier; 
 	
-	.beliefs__title{
+	.features__title{
 		font-size:$xl-size; 
 		font-family: 'Courier New', Courier, monospace; 
 		font-weight: 500; 
@@ -22,23 +22,30 @@
     margin-bottom: 1em;
     margin-left: 0;
 		margin-right: 0;
-		text-align: justify; 
+		text-align: justify;
+		font-weight: 200;  
 }
-
-	.beliefs__subtitle{
+	
+	.features__subtitle{
 		color:$off-white; 
 		font-size: $m-size;
 		font-weight: 500; 
 		margin:0; 	
 	}
 	
-	.beliefs__nav {
+	.features__nav {
 		color:white; 
+	}
+
+	.features__item__title {
+		font-size:$xl-size; 
+		font-family: 'Courier New', Courier, monospace; 
+		font-weight: 500; 
+		margin:0; 
 	}
 	
 	@media (min-width:$desktop-breakpoint) {
-		.beliefs {
+		.features {
 			margin-bottom:0; 
 		}
-	
 	}

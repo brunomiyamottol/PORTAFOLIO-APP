@@ -21,7 +21,8 @@ import '../styles/styles.scss';
 			<div>
 				<FixedNavTransBarWFull />
 					<Route path="/" component={Home} exact={true}/>
-					<Route path="/portafolio" component={Portafolio} exact={true} isAuthenticated={true}/>
+					<Route path="/portafolio" component={Portafolio} isAuthenticated={false}/>
+					<Route path="/contact" component={ Contact } />
 					{/*<Route path="/resume" component={Resume}/>
 					<Route path="/about" component={About} isAuthenticated={true}/>
 					<Route path="/experience" component={Portafolio} exact={true} isAuthenticated={true}/>

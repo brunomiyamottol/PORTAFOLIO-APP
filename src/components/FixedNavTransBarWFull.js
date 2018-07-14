@@ -46,6 +46,9 @@ render() {
                     <NavItem>
                     <NavLink to="#">MOBILITY</NavLink>
                     </NavItem>
+                    <NavItem active>
+                    <NavLink to="/contact">CONTACT</NavLink>
+                    </NavItem>
                   </NavbarNav>
                   <NavbarNav right>
                   <NavItem>

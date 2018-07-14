@@ -7,7 +7,7 @@ export default class FeaturesPage extends Component {
     return(
       <Container>
         <section className="my-5">
-          <h2 className="h1-responsive font-weight-bold text-center my-5">Currently Solera LATAM CTO</h2>
+          <h2 className="h1-responsive font-weight-bold text-center my-5">CURRENTLY ACTING SOLERA LATAM CTO</h2>
           <p className="lead grey-text w-responsive text-center mx-auto mb-5"></p>
           <Row>
             <Col lg="5" className="text-center text-lg-left">
@@ -20,7 +20,7 @@ export default class FeaturesPage extends Component {
                 </Col>
                 <Col xl="10" md="11" size="10">
                   <h5 className="font-weight-bold mb-3"></h5>
-                  <p className="grey-text">As Chief Technology Officer I'm focused on scientific and technical issues within the Solera LATAM organization. Essentially, responsible for the transformation of capital – be it monetary or intellectual – into technology in furtherance of the company’s regional and ultimately global objectives. I believe that as CTO I should be the ‘most technical business person’ and my goal is to build a great organization, not only a technology. It’s simple, my primary job as CTO is to make sure the company's technology strategy serves its business strategy. I strongly believe along with technology understanding every CTO needs great understating of the business itself.</p>
+                  <p className="grey-text">As Chief Technology Officer I'm focused on scientific and technical issues within the Solera LATAM organization. Essentially, responsible for the transformation of Solera capital Assets – be it monetary or intellectual – into technology in furtherance of Solera's LATAM  and ultimately global objectives. I believe that as the CTO I must stive to be the ‘most technical business person’ and my goal is to build a great organization, not only a technology. It’s simple, my primary job as Solera LATAM CTO is to make sure the company's technology strategy serves its business strategy. I strongly believe that along with technology understanding as Solera CTO I need great understating of the business itself.</p>
                 </Col>
               </Row>
               <Row className="mb-3">
