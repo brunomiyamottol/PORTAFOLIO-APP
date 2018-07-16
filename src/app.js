@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'normalize.css/normalize.css';  
 import './styles/styles.scss'; 
 
+
 const App = () => (
 	<div>
 	<AppRouter />
