@@ -1,58 +1,32 @@
 {
-  "name": "bmiyamotto",
+  "name": "miyamottonetserver",
   "version": "1.0.0",
-  "description": "@brunobiyamotto SPA Web Application SITE ",
-  "main": "app.js",
+  "description": "MiyamottoNet is a information sharing platform",
+  "main": "server.js",
   "scripts": {
-    "serve": "live-server public/",
-    "build": "webpack",
-    "dev-server": "webpack-dev-server --mode=development",
-    "test": "test-app",
-    "start": "node server/server.js",
-    "start-c": "babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch | live-server public/",
-    "build:dev-watch": "webpack",
-    "build:dev": "webpack --watch | node server/server.js ",
-    "build:prod": "webpack -p --env production",
-    "heroku-postbuild": "npm run build:prod"
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunomiyamottol/MIYAMOTTONET.git"
   },
   "author": "@brunomiyamotto",
-  "license": "ISC",
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
-    "webpack-cli": "^2.1.3"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brunomiyamottol/MIYAMOTTONET/issues"
   },
+  "homepage": "https://github.com/brunomiyamottol/MIYAMOTTONET#readme",
   "dependencies": {
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.4",
-    "babel-plugin-transform-class-properties": "^6.24.1",
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-react": "^6.24.1",
-    "body-parser": "^1.18.2",
-    "bootstrap": "^4.1.1",
-    "concurrently": "^3.6.0",
-    "cookie-parser": "^1.4.3",
-    "css-loader": "^0.28.11",
-    "express": "^4.16.2",
-    "live-server": "^1.2.0",
-    "mdbreact": "^4.5.1",
-    "node-sass": "^4.9.2",
-    "normalize.css": "^8.0.0",
-    "npm": "^5.8.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.3.0",
+    "mongoose": "^5.2.3",
     "passport": "^0.4.0",
-    "path": "^0.12.7",
-    "react": "^16.4.0",
-    "react-bootstrap": "^0.32.1",
-    "react-dom": "^16.4.0",
-    "react-modal": "^3.4.4",
-    "react-router": "^4.2.0",
-    "react-router-dom": "^4.3.1",
-    "reactstrap": "^6.2.0",
-    "rotating-file-stream": "^1.3.6",
-    "sass-loader": "^7.0.1",
-    "style-loader": "^0.21.0",
-    "validator": "^10.2.0",
-    "webpack": "^4.8.3",
-    "webpack-dev-server": "^3.1.4"
+    "passport-jwt": "^4.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.2"
   }
 }
