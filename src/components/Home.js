@@ -7,7 +7,7 @@ import '../styles/styles.scss';
 export default class Home extends Component {
 render() {
 	return (
-		<div >
+		<div>
 			<div className="container">
 				<CarouselPage />
 					<Jumbotron>
